@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font: var(--font-m);
+  color: var(--text-light-color);
+  font-weight: 600;
+  gap: 40px;
+  width: 75%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total_products {
+
+
+  & span {
+    color: var(--text-color-hover);
+    margin-right: 15px;
+  }
+}
+
+form label {
+  margin-right: 15px;
+}
+
+select {
+  border: none;
+  width: 200px;
+  padding: 4px;
+  font: inherit;
+  text-transform: uppercase;
+
+}
+
+.product_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

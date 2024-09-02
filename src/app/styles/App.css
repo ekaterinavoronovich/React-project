@@ -1,0 +1,25 @@
+#root {
+
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins-Regular"),
+        url("../../fonts/poppins/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu-Regular"),
+        url("../../fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+a {
+    cursor: pointer;
+}

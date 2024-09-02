@@ -1,0 +1,52 @@
+:root {
+    --font-family-main: 'Poppins', sans-serif;
+    --font-family-secondary: "Ubuntu", sans-serif;
+    --font-size-m: 16px;
+    --font-line-m: 24px;
+    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    --font-size-l: 24px;
+    --font-line-l: 32px;
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-size-xl: 32px;
+    --font-line-xl: 40px;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+    // Размеры
+    --navbar-height: 85px;
+    --sidebar-width: 300px;
+    --sidebar-width-collapsed: 80px;
+    // Z-index
+    --z-index-modal: 10;
+
+    //Colors
+    --overlay-color: rgba(0, 0, 0, 0.6);
+    // --active-text-color: #0315ff;
+    --text-light-color: #787878;
+    --text-color: #000000;
+    --text-color-hover: #007bff;
+    //breakpoints
+    $tablet-min: 768px;
+    $laptops-min: 1024px;
+    $desktops-min: 1200px;
+
+    @mixin tablet {
+        @media (min-width: $tablet-min) {
+            @content;
+        }
+    }
+
+    @mixin laptops {
+        @media (min-width: $laptops-min) {
+            @content;
+        }
+    }
+
+    @mixin desktops {
+        @media (min-width: $desktops-min) {
+            @content;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,109 @@
+.footer {
+  background-color: #252525;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 10px;
+  text-transform: capitalize;
+
+}
+
+.container,
+.area_social {
+  padding: 70px 15px 60px 15px;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+  justify-content: space-between;
+
+}
+
+.container ul li {
+  display: inline-block;
+  margin-left: 15px;
+
+}
+
+
+
+.nav_right {
+  width: 50%;
+
+}
+
+.nav_left,
+.area_subscribe {
+  width: 50%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.nav_right ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: stretch;
+
+  & li {
+    justify-self: start;
+  }
+}
+
+.social_link {
+  width: 50%;
+  display: flex;
+
+  & img {
+    margin-right: 20px;
+  }
+
+}
+
+.subscription {
+  width: 270px;
+  height: 35px;
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.add_email {
+  width: 100%;
+  height: inherit;
+  background-color: transparent;
+  border: none;
+
+}
+
+.add_email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  ;
+}
+
+
+
+
+.submit_email {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: inherit;
+  border: none;
+
+
+}
+
+@media screen and (max-width:768px) {
+
+  .nav_right,
+  .nav_left,
+  .social_link {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
