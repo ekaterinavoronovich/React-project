@@ -4,12 +4,12 @@ import { LinkApp } from '../LinkApp/LinkApp';
 import { AppRoutes } from '../../const/AppRoutes';
 import arrow from '../../../img/logo/arrow-down.svg';
 import { MenuProps } from '../Navbar/Navbar';
-
-// type MenuProps = {
-//   menuActive: boolean;
-//   setMenuActive: (value: boolean) => any;
-//   data: Array<DataCategories>;
-// };
+import { DataCategories } from '../../../app/providers/store/dataCategories-slice';
+type MenuProps = {
+  //   menuActive: boolean;
+  //   setMenuActive: (value: boolean) => any;
+  data: Array<DataCategories>;
+};
 const Menu = (props: MenuProps) => {
   const { data = [] } = props;
   const [submenuActive, setSubmenuActive] = useState(false);

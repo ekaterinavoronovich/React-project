@@ -8,9 +8,22 @@
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  text-align: start;
+  //overflow-y: scroll;
 
+  & li {
+    background-color: #f2f4f8;
+    border-bottom: 1px solid white;
+    padding: 3px 0;
+  }
 }
 
-.sidebar_menu.sidebar_active {
+.sidebar_menu.active {
   transform: translateX(0);
+}
+
+.submenu li {
+  border-bottom: 1px solid #f2f4f8;
+  background-color: white;
 }

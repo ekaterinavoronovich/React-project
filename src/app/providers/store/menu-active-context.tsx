@@ -20,6 +20,6 @@ export const MenuContextProvider: React.FC<ContextProviderProps> = ({ children }
   const toggleState = () => {
     setState(!isOpen);
   };
-
+  console.log(isOpen);
   return <MenuContext.Provider value={{ isOpen, toggleState }}>{children}</MenuContext.Provider>;
 };
